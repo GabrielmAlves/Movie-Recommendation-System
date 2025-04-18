@@ -123,11 +123,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
 			"type" : "STRING",
-			"value" : "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.39.33519/bin/Hostx64/x64/cl.exe"
+			"value" : "cl.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -235,11 +235,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "C compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
 			"type" : "STRING",
-			"value" : "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.39.33519/bin/Hostx64/x64/cl.exe"
+			"value" : "cl.exe"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -1100,6 +1100,42 @@
 			],
 			"type" : "STATIC",
 			"value" : "C:/Users/Usuario/OneDrive/Documentos/Projetos/Movie-Recommendation-System/server/MovieServerApp"
+		},
+		{
+			"name" : "MovieServer_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/Usuario/OneDrive/Documentos/Projetos/Movie-Recommendation-System/server/MovieServerApp/out/build/x64-debug/MovieServer"
+		},
+		{
+			"name" : "MovieServer_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "OFF"
+		},
+		{
+			"name" : "MovieServer_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/Usuario/OneDrive/Documentos/Projetos/Movie-Recommendation-System/server/MovieServerApp/MovieServer"
 		}
 	],
 	"kind" : "cache",

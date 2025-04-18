@@ -14,6 +14,7 @@
 		"commands" : 
 		[
 			"add_executable",
+			"include_directories",
 			"set_property"
 		],
 		"files" : 
@@ -36,6 +37,12 @@
 				"file" : 0,
 				"line" : 9,
 				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 0
 			}
 		]
 	},
@@ -48,12 +55,19 @@
 					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI"
 				}
 			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/Usuario/OneDrive/Documentos/Projetos/Movie-Recommendation-System/server/MovieServerAppcrow"
+				}
+			],
 			"language" : "CXX",
 			"languageStandard" : 
 			{
 				"backtraces" : 
 				[
-					2
+					3
 				],
 				"standard" : "20"
 			},

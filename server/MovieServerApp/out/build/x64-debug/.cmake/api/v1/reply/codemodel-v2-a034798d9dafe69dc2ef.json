@@ -26,7 +26,7 @@
 						"string" : "3.8"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 0,
+					"projectIndex" : 1,
 					"source" : "MovieServer",
 					"targetIndexes" : 
 					[
@@ -38,12 +38,23 @@
 			"projects" : 
 			[
 				{
-					"directoryIndexes" : 
+					"childIndexes" : 
 					[
-						0,
 						1
 					],
-					"name" : "MovieServerApp",
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "MovieServerApp"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "MovieServer",
+					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
 						0
@@ -55,9 +66,9 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "MovieServer::@8df2c4921bef7eb07536",
-					"jsonFile" : "target-MovieServer-Debug-a184fa515b9392e0b9f0.json",
+					"jsonFile" : "target-MovieServer-Debug-66bc58c43d5d60e1f289.json",
 					"name" : "MovieServer",
-					"projectIndex" : 0
+					"projectIndex" : 1
 				}
 			]
 		}
