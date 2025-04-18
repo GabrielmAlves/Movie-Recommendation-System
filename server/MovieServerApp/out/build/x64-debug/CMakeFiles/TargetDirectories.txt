@@ -1,0 +1,5 @@
+C:/Users/Usuario/OneDrive/Documentos/Projetos/Movie-Recommendation-System/server/MovieServerApp/out/build/x64-debug/CMakeFiles/edit_cache.dir
+C:/Users/Usuario/OneDrive/Documentos/Projetos/Movie-Recommendation-System/server/MovieServerApp/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Usuario/OneDrive/Documentos/Projetos/Movie-Recommendation-System/server/MovieServerApp/out/build/x64-debug/MovieServer/CMakeFiles/MovieServer.dir
+C:/Users/Usuario/OneDrive/Documentos/Projetos/Movie-Recommendation-System/server/MovieServerApp/out/build/x64-debug/MovieServer/CMakeFiles/edit_cache.dir
+C:/Users/Usuario/OneDrive/Documentos/Projetos/Movie-Recommendation-System/server/MovieServerApp/out/build/x64-debug/MovieServer/CMakeFiles/rebuild_cache.dir
