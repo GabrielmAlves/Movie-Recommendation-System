@@ -1,3 +1,5 @@
 # ninja log v5
-19	2465	7668249573236725	MovieServer/CMakeFiles/MovieServer.dir/MovieServer.cpp.obj	27f47e95c0a2df6
-2466	2664	7668249574898637	MovieServer/MovieServer.exe	19a0ebffdfc1a2ea
+16	2396	7669067386532284	MovieServer/CMakeFiles/MovieServer.dir/MovieServer.cpp.obj	27f47e95c0a2df6
+2396	2599	7669067388227507	MovieServer/MovieServer.exe	cf2acaeb182dd927
+1	2617	7669061453732984	MovieServer/CMakeFiles/MovieServer.dir/src/MovieServer.cpp.obj	bf911e45aa46097
+4	84	7669065705226619	MovieServer/CMakeFiles/MovieServer.dir/src/login.cpp.obj	51ade3674a2f4552

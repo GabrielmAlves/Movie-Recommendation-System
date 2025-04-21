@@ -3,7 +3,7 @@
 #
 
 # Adicione a origem ao executável deste projeto.
-add_executable (MovieServer "MovieServer.cpp" "MovieServer.h")
+add_executable (MovieServer "MovieServer.cpp"  "src/login.cpp" "include/login.h" "include/config.h")
 project(MovieServer)
 set(CMAKE_CXX_STANDARD 20)
 include_directories(${CMAKE_SOURCE_DIR}crow)
