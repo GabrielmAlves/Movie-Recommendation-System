@@ -85,11 +85,27 @@ build MovieServer\CMakeFiles\MovieServer.dir\MovieServer.cpp.obj: CXX_COMPILER__
   TARGET_COMPILE_PDB = MovieServer\CMakeFiles\MovieServer.dir\
   TARGET_PDB = MovieServer\MovieServer.pdb
 
-build MovieServer\CMakeFiles\MovieServer.dir\src\login.cpp.obj: CXX_COMPILER__MovieServer_unscanned_Debug C$:\Users\Usuario\OneDrive\Documentos\Projetos\Movie-Recommendation-System\server\MovieServerApp\MovieServer\src\login.cpp || cmake_object_order_depends_target_MovieServer
+build MovieServer\CMakeFiles\MovieServer.dir\src\routes\login.cpp.obj: CXX_COMPILER__MovieServer_unscanned_Debug C$:\Users\Usuario\OneDrive\Documentos\Projetos\Movie-Recommendation-System\server\MovieServerApp\MovieServer\src\routes\login.cpp || cmake_object_order_depends_target_MovieServer
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
   INCLUDES = -IC:\Users\Usuario\OneDrive\Documentos\Projetos\Movie-Recommendation-System\server\MovieServerAppcrow
   OBJECT_DIR = MovieServer\CMakeFiles\MovieServer.dir
-  OBJECT_FILE_DIR = MovieServer\CMakeFiles\MovieServer.dir\src
+  OBJECT_FILE_DIR = MovieServer\CMakeFiles\MovieServer.dir\src\routes
+  TARGET_COMPILE_PDB = MovieServer\CMakeFiles\MovieServer.dir\
+  TARGET_PDB = MovieServer\MovieServer.pdb
+
+build MovieServer\CMakeFiles\MovieServer.dir\src\routes\router.cpp.obj: CXX_COMPILER__MovieServer_unscanned_Debug C$:\Users\Usuario\OneDrive\Documentos\Projetos\Movie-Recommendation-System\server\MovieServerApp\MovieServer\src\routes\router.cpp || cmake_object_order_depends_target_MovieServer
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
+  INCLUDES = -IC:\Users\Usuario\OneDrive\Documentos\Projetos\Movie-Recommendation-System\server\MovieServerAppcrow
+  OBJECT_DIR = MovieServer\CMakeFiles\MovieServer.dir
+  OBJECT_FILE_DIR = MovieServer\CMakeFiles\MovieServer.dir\src\routes
+  TARGET_COMPILE_PDB = MovieServer\CMakeFiles\MovieServer.dir\
+  TARGET_PDB = MovieServer\MovieServer.pdb
+
+build MovieServer\CMakeFiles\MovieServer.dir\src\routes\recommend.cpp.obj: CXX_COMPILER__MovieServer_unscanned_Debug C$:\Users\Usuario\OneDrive\Documentos\Projetos\Movie-Recommendation-System\server\MovieServerApp\MovieServer\src\routes\recommend.cpp || cmake_object_order_depends_target_MovieServer
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
+  INCLUDES = -IC:\Users\Usuario\OneDrive\Documentos\Projetos\Movie-Recommendation-System\server\MovieServerAppcrow
+  OBJECT_DIR = MovieServer\CMakeFiles\MovieServer.dir
+  OBJECT_FILE_DIR = MovieServer\CMakeFiles\MovieServer.dir\src\routes
   TARGET_COMPILE_PDB = MovieServer\CMakeFiles\MovieServer.dir\
   TARGET_PDB = MovieServer\MovieServer.pdb
 
@@ -101,7 +117,7 @@ build MovieServer\CMakeFiles\MovieServer.dir\src\login.cpp.obj: CXX_COMPILER__Mo
 #############################################
 # Link the executable MovieServer\MovieServer.exe
 
-build MovieServer\MovieServer.exe: CXX_EXECUTABLE_LINKER__MovieServer_Debug MovieServer\CMakeFiles\MovieServer.dir\MovieServer.cpp.obj MovieServer\CMakeFiles\MovieServer.dir\src\login.cpp.obj
+build MovieServer\MovieServer.exe: CXX_EXECUTABLE_LINKER__MovieServer_Debug MovieServer\CMakeFiles\MovieServer.dir\MovieServer.cpp.obj MovieServer\CMakeFiles\MovieServer.dir\src\routes\login.cpp.obj MovieServer\CMakeFiles\MovieServer.dir\src\routes\router.cpp.obj MovieServer\CMakeFiles\MovieServer.dir\src\routes\recommend.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
