@@ -17,7 +17,7 @@ import { useForm, Controller } from 'react-hook-form'
        <View style={styles.container}>
         <View style={styles.containerLogo}>
           <Image source={require('../../assets/movie-icon.png')}
-                 style={{width:'100%'}}
+                 style={{width:'75%'}}
                  resizeMode="contain"/>
         </View>
         
@@ -96,7 +96,12 @@ import { useForm, Controller } from 'react-hook-form'
     input: {
       width: '100%',
       height: 40,
-      backgroundColor: 'grey',
+      backgroundColor: '#90B8E0',
       top: 100,
+      borderRadius: 50,
+      fontSize: 15,
+      fontWeight: 'bold',
+      textAlign: 'left',
+      padding: 20,
     }
  })
