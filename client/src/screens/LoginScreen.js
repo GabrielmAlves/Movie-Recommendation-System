@@ -1,17 +1,24 @@
 import React, {useState} from 'react';
 import { View, Button, Text, StyleSheet, Image, TouchableOpacity, TextInput } from 'react-native';
 import { useForm, Controller } from 'react-hook-form'
- 
- export default function LoginScreen({ navigation }) {
-     const {control, handleSubmit, formState:{errors}} = useForm({
+import * as yup from 'yup'
+import { yupResolver } from '@hookform/resolvers/yup'
 
+
+const schema = yup.object({
+  username: yup.string().required("Informe seu nome de usuário!"),
+  password: yup.string().min(8, "A senha deve ter pelo menos 8 dígitos!").required("Digite sua senha!")
+})
+
+export default function LoginScreen({ navigation }) {
+     const {control, handleSubmit, formState:{errors}} = useForm({
+        resolver: yupResolver(schema)
      })
 
      function handleSignIn(data) {
-      alert(data)
+      navigation.navigate('Home')
+      console.log(data)
      }
-     const [username, setUsername] = useState('')
-     const [password, setPassword] = useState('')
 
      return (
        <View style={styles.container}>
@@ -22,15 +29,37 @@ import { useForm, Controller } from 'react-hook-form'
         </View>
         
         <View style={styles.containerLoginForm}>
-          <Controller control={control} name='username' render={() => (
-            <TextInput style={styles.input} 
-                       onChangeText={setUsername} 
-                       value={username} 
+          <Controller control={control} name='username' render={({ field: { onChange, onBlur, value } }) => (
+            <TextInput style={[styles.input, 
+              { borderWidth: errors.username && 1,
+                borderColor: errors.username && 'ff375b'
+              }]} 
+                       onChangeText={onChange}
+                       onBlur={onBlur} 
+                       value={value} 
                        placeholder='Nome de usuário'>
             </TextInput>
           )}/>
+          {errors.username && <Text style={styles.errorMessage} >{errors.username?.message}</Text>}
 
-          
+          <Controller control={control} name='password' render={({ field: { onChange, onBlur, value}}) => (
+            <TextInput style={[styles.input, 
+              { borderWidth: errors.password && 1,
+                borderColor: errors.password && 'ff375b'
+              }]} 
+                       onChangeText={onChange} 
+                       value={value} 
+                       placeholder='Senha'
+                       secureTextEntry={true}>
+            </TextInput>
+          )}/>
+          {errors.password && <Text style={styles.errorMessage} >{errors.password?.message}</Text>}
+
+
+          <TouchableOpacity style={styles.createAccountButton} onPress={() => navigation.navigate('CreateAccount')}>
+            <Text style={styles.createAccountText} >Não tem conta? Crie uma!</Text>
+          </TouchableOpacity>
+
           <TouchableOpacity style={styles.button} onPress={handleSubmit(handleSignIn)}>
             <Text style={styles.buttonText}>Entrar</Text>
           </TouchableOpacity>
@@ -97,11 +126,35 @@ import { useForm, Controller } from 'react-hook-form'
       width: '100%',
       height: 40,
       backgroundColor: '#90B8E0',
-      top: 100,
+      top: 70,
       borderRadius: 50,
       fontSize: 15,
       fontWeight: 'bold',
       textAlign: 'left',
       padding: 20,
+      marginBottom: 20
+    },
+
+    errorMessage: {
+      alignSelf: 'flex-start',
+      color: '#ff375b',
+      marginBottom: 20,
+      marginTop: 60
+    },
+
+    createAccountText: {
+      fontSize: 18,
+      color: "black",
+      fontWeight: 'light'
+    },
+
+    createAccountButton: {
+      position: 'relative',
+      paddingVertical: 8,
+      width: '60%',
+      alignSelf: 'right',
+      bottom: '-12%',
+      alignItems: 'right',
+      justifyContent: 'right'
     }
  })
