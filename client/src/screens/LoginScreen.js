@@ -70,91 +70,90 @@ export default function LoginScreen({ navigation }) {
  }
 
  const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#90B8E0',
-    },
+  container: {
+    flex: 1,
+    backgroundColor: '#90B8E0',
+  },
 
-    containerLogo: {
-      flex: 1,
-      backgroundColor: '#90B8E0',
-      justifyContent: 'center',
-      alignItems: 'center',
-      width: 270,
-      height: 200,
-    },
+  containerLogo: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '100%', // Garantir que ocupe toda a largura disponível
+    height: 200,   // Ajuste de altura conforme necessário
+  },
 
-    containerLoginForm: {
-      flex: 1,
-      backgroundColor: '#fff',
-      borderTopLeftRadius: 25,
-      borderTopRightRadius: 25,
-      paddingStart: '5%',
-      paddingEnd: '5%',
-    },
+  containerLoginForm: {
+    flex: 1,
+    backgroundColor: '#fff',
+    borderTopLeftRadius: 25,
+    borderTopRightRadius: 25,
+    paddingStart: '5%',
+    paddingEnd: '5%',
+  },
 
-    title: {
-      fontSize: 24,
-      fontWeight: 'bold',
-      marginTop: 28,
-      marginBottom: 12,
-    },
-  
-    text: {
-      color: "a1a1a1"
-    },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginTop: 28,
+    marginBottom: 12,
+  },
 
-    button: {
-      position: 'absolute',
-      backgroundColor: 'red',
-      borderRadius: 50,
-      paddingVertical: 8,
-      width: '60%',
-      alignSelf: 'center',
-      bottom: '15%',
-      alignItems: 'center',
-      justifyContent: 'center'
-    },
+  text: {
+    color: "a1a1a1"
+  },
 
-    buttonText: {
-      fontSize: 18,
-      color: "#fff",
-      fontWeight: 'bold'
-    },
+  button: {
+    position: 'absolute',
+    backgroundColor: 'red',
+    borderRadius: 50,
+    paddingVertical: 8,
+    width: '60%',
+    alignSelf: 'center',
+    bottom: '15%',
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
 
-    input: {
-      width: '100%',
-      height: 40,
-      backgroundColor: '#90B8E0',
-      top: 70,
-      borderRadius: 50,
-      fontSize: 15,
-      fontWeight: 'bold',
-      textAlign: 'left',
-      padding: 20,
-      marginBottom: 20
-    },
+  buttonText: {
+    fontSize: 18,
+    color: "#fff",
+    fontWeight: 'bold'
+  },
 
-    errorMessage: {
-      alignSelf: 'flex-start',
-      color: '#ff375b',
-      marginBottom: 20,
-      marginTop: 60
-    },
+  input: {
+    width: '100%',
+    height: 40,
+    backgroundColor: '#90B8E0',
+    top: 70,
+    borderRadius: 50,
+    fontSize: 15,
+    fontWeight: 'bold',
+    textAlign: 'left',
+    padding: 20,
+    marginBottom: 20
+  },
 
-    createAccountText: {
-      fontSize: 18,
-      color: "black",
-      fontWeight: 'light'
-    },
+  errorMessage: {
+    alignSelf: 'flex-start',
+    color: '#ff375b',
+    marginBottom: 20,
+    marginTop: 60
+  },
 
-    createAccountButton: {
-      position: 'relative',
-      paddingVertical: 8,
-      width: '60%',
-      alignSelf: 'right',
-      bottom: '-12%',
-      alignItems: 'right',
-      justifyContent: 'right'
-    }
- })
+  createAccountText: {
+    fontSize: 18,
+    color: "black",
+    fontWeight: 'light'
+  },
+
+  createAccountButton: {
+    position: 'relative',
+    paddingVertical: 8,
+    width: '60%',
+    alignSelf: 'right',
+    bottom: '-12%',
+    alignItems: 'right',
+    justifyContent: 'right'
+  }
+})
