@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <unordered_map>
+#include <vector>
 
 class User {
 private:
@@ -11,6 +12,7 @@ private:
 public:
 	short userAge;
 	std::unordered_map<std::string, std::string> userMoviePreferences;
+	std::vector<std::string> userMovieGenrePreferences;
 
 	User(std::string userName, std::string userAppName,
 		std::string userEmail, std::string userPassword) : 

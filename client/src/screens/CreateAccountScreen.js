@@ -24,7 +24,30 @@ export default function CreateAccountScreen({ navigation }) {
     });
 
     function handleCreateAccount(data) {
-        console.log(data);
+        const payload = {
+            ...data,
+            genres: value // adiciona os gêneros selecionados no dropdown
+        };
+    
+        fetch("http:///signup", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(payload)
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Erro ao criar conta');
+            }
+            return response.json();
+        })
+        .then(result => {
+            console.log("Conta criada com sucesso:", result);
+        })
+        .catch(error => {
+            console.error("Erro ao enviar dados:", error);
+        });
     }
 
     const [open, setOpen] = useState(false);
