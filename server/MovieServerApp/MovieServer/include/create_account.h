@@ -1,15 +1,12 @@
 #pragma once
+#include "../httplib.h"
+#include "user.h"
 #include <string>
 #include <unordered_map>
 
-class CreateAccount {
-private:
-	const std::string _userName;
-	const std::string _userEmail;
-	std::string _userPassword;
-public:
-	short userAge;
-	std::unordered_map<std::string, std::string> userMoviePreferences;
+void handle_signup(const httplib::Request& req, httplib::Response& res);
 
-	void CreateUserAccount(std::string userName, std::string userEmail, std::string userPassword);
+class CreateAccount {
+public:
+	void CreateUserAccount(User& user);
 };
