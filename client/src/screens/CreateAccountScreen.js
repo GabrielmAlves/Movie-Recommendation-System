@@ -26,7 +26,7 @@ export default function CreateAccountScreen({ navigation }) {
     function handleCreateAccount(data) {
         const payload = {
             ...data,
-            genres: value // adiciona os gêneros selecionados no dropdown
+            genres: value
         };
     
         fetch("http:///signup", {
