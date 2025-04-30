@@ -12,10 +12,16 @@ private:
 public:
 	short userAge;
 	std::unordered_map<std::string, std::string> userMoviePreferences;
-	std::vector<std::string> userMovieGenrePreferences;
+	std::vector<std::string>* userMovieGenrePreferences;
 
 	User(std::string userName, std::string userAppName,
-		std::string userEmail, std::string userPassword) : 
-		_userName(userName), _userEmail(userEmail), _userAppName(userAppName), _userPassword(userPassword)
+		std::string userEmail, std::string userPassword, std::vector<std::string>* moviePreferences) :
+		_userName(userName), _userEmail(userEmail), _userAppName(userAppName), _userPassword(userPassword),
+		userMovieGenrePreferences(moviePreferences)
 	{}
+
+	const std::string& getUserName() const { return _userName; }
+	const std::string& getUserEmail() const { return _userEmail; }
+	const std::string& getUserAppName() const { return _userAppName; }
+	const std::string& getUserPassword() const { return _userPassword; }
 };

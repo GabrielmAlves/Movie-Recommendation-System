@@ -1,4 +1,5 @@
 #pragma once
+//#define CPPHTTPLIB_OPENSSL_SUPPORT
 #include "../httplib.h"
 #include "user.h"
 #include <string>
