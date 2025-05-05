@@ -29,7 +29,7 @@ export default function CreateAccountScreen({ navigation }) {
             genres: value
         };
     
-        fetch("http:///signup", {
+        fetch("http://172.20.10.12:5000/signup", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
