@@ -16,8 +16,29 @@ export default function LoginScreen({ navigation }) {
      })
 
      function handleSignIn(data) {
-      navigation.navigate('Home')
-      console.log(data)
+      const payload = {
+        ...data,
+      };
+
+      fetch("http://172.20.10.12:5000/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(payload)
+      })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Erro ao realizar login.');
+        }
+        return response.json();
+      })
+      .then(result => {
+        console.log("Login realizado com sucesso:", result);
+      })
+    .catch(error => {
+        console.error("Erro ao enviar dados:", error);
+      });
      }
 
      return (
