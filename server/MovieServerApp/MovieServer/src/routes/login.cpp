@@ -10,8 +10,12 @@ using json = nlohmann::json;
 void handle_login(const httplib::Request req, const httplib::Response res) {
 	try {
 		auto loginBody = json::parse(req.body);
+		std::cout << "Login JSON bruto:\n" << loginBody.dump(4) << std::endl;
 		std::string username = loginBody["username"];
 		std::string password = loginBody["password"];
+
+		std::cout << username << std::endl;
+		std::cout << password << std::endl;
 		
 		std::shared_ptr<Login> login = std::make_shared<Login>(username, password);
 
@@ -41,7 +45,7 @@ void Login::UserLogin(const std::shared_ptr<Login>& loginObject, const std::stri
 
 	httplib::Headers headers = {
 		{"Content-Type", "application/json"},
-		{"Authentication", "Bearer" + token}
+		{"Authorization", "Bearer " + token}
 	};
 
 	json bodyJson = {
@@ -49,7 +53,7 @@ void Login::UserLogin(const std::shared_ptr<Login>& loginObject, const std::stri
 			{ "from", { { { "collectionId", "usuarios" } } } },
 			{ "where", {
 				{ "fieldFilter", {
-					{ "field", { { "fieldPath", "username" } } },
+					{ "field", { { "fieldPath", "nome" } } },
 					{ "op", "EQUAL" },
 					{ "value", { { "stringValue", username } } }
 				} }

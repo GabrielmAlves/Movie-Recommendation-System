@@ -1,7 +1,7 @@
 # ninja log v5
-21	3842	7679212581842726	MovieServer/CMakeFiles/MovieServer.dir/src/routes/login.cpp.obj	dd8e7d7cef5f3161
+3	4266	7682862913914010	MovieServer/CMakeFiles/MovieServer.dir/src/routes/login.cpp.obj	dd8e7d7cef5f3161
 24	2356	7679212567027554	MovieServer/CMakeFiles/MovieServer.dir/src/routes/router.cpp.obj	4c6194972961f0c7
 2	3539	7679212177933630	MovieServer/CMakeFiles/MovieServer.dir/MovieServer.cpp.obj	48c9821fd08d207d
 11	3828	7676216351031857	MovieServer/CMakeFiles/MovieServer.dir/src/routes/recommend.cpp.obj	dca91642d749d40
 10	3896	7679212181504549	MovieServer/CMakeFiles/MovieServer.dir/src/routes/create_account.cpp.obj	2cec841dfad8fec4
-3842	4577	7679212588333362	MovieServer/MovieServer.exe	59d19689ac186ce8
+4267	4485	7682862915736991	MovieServer/MovieServer.exe	59d19689ac186ce8
