@@ -27,7 +27,8 @@ add_executable(MovieServer
     "src/routes/recommend.cpp" 
     "include/user.h" 
     "src/routes/create_account.cpp"
-)
+    "include/utils.h"
+ "include/home.h" "src/routes/home.cpp")
 
 
 target_link_libraries(MovieServer OpenSSL::SSL OpenSSL::Crypto ws2_32 crypt32 user32)

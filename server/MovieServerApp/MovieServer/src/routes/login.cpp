@@ -1,6 +1,7 @@
 #define CPPHTTLIB_OPENSSL_SUPPORT
 #include "../../include/config.h"
 #include "../../include/login.h"
+#include "../../include/utils.h"
 #include "../../include/json.hpp"
 #include <iostream>
 #include <memory>

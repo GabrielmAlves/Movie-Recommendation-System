@@ -122,6 +122,15 @@ build MovieServer\CMakeFiles\MovieServer.dir\src\routes\create_account.cpp.obj: 
   TARGET_COMPILE_PDB = MovieServer\CMakeFiles\MovieServer.dir\
   TARGET_PDB = MovieServer\MovieServer.pdb
 
+build MovieServer\CMakeFiles\MovieServer.dir\src\routes\home.cpp.obj: CXX_COMPILER__MovieServer_unscanned_Debug C$:\Users\Usuario\OneDrive\Documentos\Projetos\Movie-Recommendation-System\server\MovieServerApp\MovieServer\src\routes\home.cpp || cmake_object_order_depends_target_MovieServer
+  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
+  INCLUDES = -external:IC:\Users\Usuario\OneDrive\Documentos\vcpkg\installed\x64-windows\include -external:W0
+  OBJECT_DIR = MovieServer\CMakeFiles\MovieServer.dir
+  OBJECT_FILE_DIR = MovieServer\CMakeFiles\MovieServer.dir\src\routes
+  TARGET_COMPILE_PDB = MovieServer\CMakeFiles\MovieServer.dir\
+  TARGET_PDB = MovieServer\MovieServer.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target MovieServer
@@ -130,7 +139,7 @@ build MovieServer\CMakeFiles\MovieServer.dir\src\routes\create_account.cpp.obj: 
 #############################################
 # Link the executable MovieServer\MovieServer.exe
 
-build MovieServer\MovieServer.exe: CXX_EXECUTABLE_LINKER__MovieServer_Debug MovieServer\CMakeFiles\MovieServer.dir\MovieServer.cpp.obj MovieServer\CMakeFiles\MovieServer.dir\src\routes\login.cpp.obj MovieServer\CMakeFiles\MovieServer.dir\src\routes\router.cpp.obj MovieServer\CMakeFiles\MovieServer.dir\src\routes\recommend.cpp.obj MovieServer\CMakeFiles\MovieServer.dir\src\routes\create_account.cpp.obj | C$:\Users\Usuario\OneDrive\Documentos\vcpkg\installed\x64-windows\lib\libssl.lib C$:\Users\Usuario\OneDrive\Documentos\vcpkg\installed\x64-windows\lib\libcrypto.lib
+build MovieServer\MovieServer.exe: CXX_EXECUTABLE_LINKER__MovieServer_Debug MovieServer\CMakeFiles\MovieServer.dir\MovieServer.cpp.obj MovieServer\CMakeFiles\MovieServer.dir\src\routes\login.cpp.obj MovieServer\CMakeFiles\MovieServer.dir\src\routes\router.cpp.obj MovieServer\CMakeFiles\MovieServer.dir\src\routes\recommend.cpp.obj MovieServer\CMakeFiles\MovieServer.dir\src\routes\create_account.cpp.obj MovieServer\CMakeFiles\MovieServer.dir\src\routes\home.cpp.obj | C$:\Users\Usuario\OneDrive\Documentos\vcpkg\installed\x64-windows\lib\libssl.lib C$:\Users\Usuario\OneDrive\Documentos\vcpkg\installed\x64-windows\lib\libcrypto.lib
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = C:\Users\Usuario\OneDrive\Documentos\vcpkg\installed\x64-windows\lib\libssl.lib  C:\Users\Usuario\OneDrive\Documentos\vcpkg\installed\x64-windows\lib\libcrypto.lib  ws2_32.lib  crypt32.lib  user32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
