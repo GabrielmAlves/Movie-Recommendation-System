@@ -24,9 +24,6 @@ void handle_signup(const httplib::Request& req, httplib::Response& res) {
 			*genres = requestBodyJson["genres"].get<std::vector<std::string>>();
 		}
 		std::shared_ptr<User> user = std::make_shared<User>(userName, userAppName, userEmail, userPassword, genres);
-		std::cout << user->getUserName() << std::endl;
-		std::cout << user->getUserAppName() << std::endl;
-		std::cout << user->getUserEmail() << std::endl;
 		
 		for (const auto& g : *genres) {
 			std::cout << g << std::endl;

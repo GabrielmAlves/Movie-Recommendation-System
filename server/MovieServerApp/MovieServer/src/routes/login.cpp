@@ -14,9 +14,6 @@ void handle_login(const httplib::Request req, const httplib::Response res) {
 		std::cout << "Login JSON bruto:\n" << loginBody.dump(4) << std::endl;
 		std::string username = loginBody["username"];
 		std::string password = loginBody["password"];
-
-		std::cout << username << std::endl;
-		std::cout << password << std::endl;
 		
 		std::shared_ptr<Login> login = std::make_shared<Login>(username, password);
 
