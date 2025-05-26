@@ -20,5 +20,5 @@ namespace config {
 	const std::string COLLECTION = "usuarios";
 
 	const std::string FIREBASE_CLIENT = "firestore.googleapis.com";
-	const std::string FIREBASE_QUERY_NO_ID = "/v1/projects/movie-recommendation-sys-caa01/databases/(default)/documents:runQuery";
+	const std::string FIREBASE_QUERY_NO_ID = "https://firestore.googleapis.com/v1/projects/movie-recommendation-sys-caa01/databases/(default)/documents:runQuery";
 }
