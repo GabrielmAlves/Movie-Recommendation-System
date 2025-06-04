@@ -5,8 +5,8 @@
 
 class utils {
 public:
-	std::string GetToken(httplib::SSLClient sslClient) {
-		auto tokenResponse = sslClient.Get("/token");
+	httplib::Result GetToken(httplib::Client& client) {
+		auto tokenResponse = client.Get("/token");
 		std::string static token;
 
 		if (tokenResponse && tokenResponse->status == 200) {
@@ -18,5 +18,7 @@ public:
 		} else {
 			std::cout << "Erro ao obter o token!" << std::endl;
 		}
+
+		return tokenResponse;
 	}
 };

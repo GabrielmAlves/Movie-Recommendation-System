@@ -29,6 +29,9 @@ void Login::UserLogin(const std::shared_ptr<Login>& loginObject, const std::stri
 	httplib::Client tokenClient("localhost", 6000);
 	httplib::SSLClient sslClient(config::FIREBASE_CLIENT, 443);
 	std::string static token;
+	std::shared_ptr<utils> obj = std::make_shared<utils>();
+
+	/*auto tokenResponse = obj->GetToken(tokenClient);*/
 
 	auto tokenResponse = tokenClient.Get("/token");
 
